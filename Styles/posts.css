@@ -1,0 +1,170 @@
+.kind-of-a-header {
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	align-items: center;
+	font-weight: bold;
+	top: 0;
+	left: 266px;
+	width: 399px;
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgb(228, 228, 228);
+	height: 34px;
+}
+
+@media (max-width:1000px) {
+	.kind-of-a-header {
+		left: 90px;
+	}
+}
+
+.kind-of-a-header div {
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	padding-right: 10px;
+}
+
+.kind-of-a-header img {
+	width: 14px;
+	padding-right: 10px;
+}
+
+.tweet,
+.create-tweet {
+	display: flex;
+	padding: 6px 12px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: rgb(228, 228, 228);
+	;
+	min-width: 0;
+	min-height: 0;
+}
+
+.create-tweet {
+	padding-top: 14px;
+}
+
+.user-profile-picture {
+	width: 26px;
+	height: 26px;
+	border-radius: 16px;
+	margin-right: 4px;
+}
+
+.writing-section {
+	border: none;
+	padding-top: 6px;
+	margin-bottom: 10px;
+}
+
+.create-tweet-bottom {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.new-tweet-options {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.new-tweet-options div img {
+	margin-right: 8px;
+	width: 13px;
+}
+
+.new-tweet-options button {
+	background-color: rgb(29, 155, 240);
+	border: none;
+	border-radius: px;
+	color: white;
+	font-size: 10px;
+	font-weight: 700;
+	padding: 7px 12px 6px 12px;
+	border-radius: 20px;
+}
+
+.user-post {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.user-details-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.user-name-handle-container {
+	display: flex;
+	align-items: center;
+	padding-bottom: 2px;
+}
+
+.user-name {
+	display: flex;
+	font-weight: 700;
+	color: rgb(15, 20, 25);
+}
+
+.bluetick {
+	width: 12px;
+	margin-left: 2px;
+}
+
+.user-handle {
+	margin-left: 2px;
+	color: rgb(83, 100, 113);
+}
+
+.user-details .user-written-content {
+	margin-bottom: 10px;
+}
+
+.user-menu {
+	width: 13px;
+}
+
+.user-posted-content {
+	margin-bottom: 8px;
+	max-height: 350px;
+}
+
+.user-image {
+	max-width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+
+.bottom-section-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.bottom-section {
+	display: flex;
+	position: relative;
+}
+
+.bottom-section-container img {
+	width: 13px;
+	height: 13px;
+}
+
+.bottom-section div {
+	font-size: 8px;
+	color: grey;
+	position: absolute;
+	bottom: 0px;
+	right: -18px;
+}
+
+.bookmark-icon {
+	padding-right: 8px;
+}

@@ -1,0 +1,146 @@
+.sidebar-navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 95px;
+	flex-shrink: 0;
+}
+
+@media (max-width: 1000px) {
+	.sidebar-navigation {
+		top: 0;
+		bottom: 0;
+		left: 48px;
+	}
+
+	.post-icon-button {
+		position: absolute;
+		margin-top: 10px;
+		opacity: 1;
+		background-color: rgb(29, 155, 240);
+		border: none;
+		border-radius: 40px;
+		padding: 7px 10px 7px 10px;
+		transition: opacity 0.3s;
+		cursor: pointer;
+		left: -8px;
+	}
+
+	.post-icon-button .post-icon {
+		width: 16px;
+		height: 16px;
+		margin-top: 2px;
+		transition: opacity 0.3s;
+	}
+
+	.post-button {
+		display: none;
+	}
+
+	.navigation-link div {
+		display: none;
+	}
+
+	.sidebar-bottom-section div div,
+	.sidebar-bottom-section .user-menu {
+		display: none;
+	}
+
+	.user-logged-in .user-profile-picture {
+		margin-right: 0;
+	}
+}
+
+
+@media (min-width:1000.1px) {
+
+	.post-icon-button,
+	.post-icon-button .post-icon {
+		display: none;
+	}
+
+	.post-button {
+		opacity: 1;
+		transition: opactiy 0.3s;
+	}
+}
+
+.sidebar-top-section,
+.sidebar-links {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.twitter-logo {
+	width: 20px;
+	height: 20px;
+	padding: 9px 0px 2px 0px;
+}
+
+.navigation-link {
+	display: flex;
+	align-items: end;
+	flex-shrink: 0;
+	padding: 13px 0px 2px 0px;
+	cursor: pointer;
+}
+
+.navigation-link img {
+	width: 17.5px;
+	height: 17.5px;
+	cursor: pointer;
+}
+
+.navigation-link div {
+	font-size: 14px;
+	color: rgb(15, 20, 25);
+	min-width: 0;
+	padding-left: 14px;
+}
+
+.navigation-link:active div {
+	font-weight: 700;
+}
+
+.post-button {
+	position: absolute;
+	left: -8px;
+	margin-top: 10px;
+	background-color: rgb(29, 155, 240);
+	font-size: 10px;
+	font-weight: 800;
+	color: white;
+	border: none;
+	border-radius: 40px;
+	padding: 10px 65px 10px 65px;
+	cursor: pointer;
+}
+
+.sidebar-bottom-section {
+	position: relative;
+}
+
+.user-logged-in {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	padding: 8px;
+	margin-bottom: 8px;
+	border-radius: 40px;
+	bottom: 0;
+	left: -8px;
+	cursor: pointer;
+}
+
+.user-logged-in:hover {
+	background-color: rgb(228, 228, 228);
+}
+
+.current-user-details {
+	padding-right: 36px;
+	line-height: 15px
+}
